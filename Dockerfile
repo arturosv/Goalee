@@ -1,26 +1,45 @@
-# Use Node.js 18 Alpine for smaller image size
-FROM node:18-alpine
-
-# Set working directory
+# Stage 1: Build the React frontend
+FROM node:18-alpine AS frontend-builder
 WORKDIR /app
-
-# Copy package files
 COPY package*.json ./
-
-# Install dependencies
-RUN npm ci --only=production
-
-# Copy source code
+RUN npm install
 COPY . .
-
-# Build the app for production
+# The build directory will be created at /app/build
 RUN npm run build
 
-# Install serve to run the built app
-RUN npm install -g serve
+# Stage 2: Build the Node.js backend
+FROM node:18-alpine AS backend-builder
+WORKDIR /app
+COPY backend/package*.json backend/tsconfig.json ./backend/
+RUN cd backend && npm install
+COPY backend/src ./backend/src
+# The dist directory will be created at /app/backend/dist
+RUN cd backend && npm run build
 
-# Expose port 3000
-EXPOSE 3000
+# Stage 3: Create the final production image
+FROM node:18-alpine AS production
+WORKDIR /app
 
-# Start the app
-CMD ["serve", "-s", "build", "-l", "3000"] 
+# Set production environment
+ENV NODE_ENV=production
+
+# Install backend production dependencies
+COPY backend/package*.json backend/package-lock.json ./backend/
+RUN cd backend && npm ci --only=production
+
+# Copy built frontend from the builder stage
+COPY --from=frontend-builder /app/build ./build
+
+# Copy compiled backend from the builder stage
+COPY --from=backend-builder /app/backend/dist ./backend/dist
+
+# Copy the database file
+COPY backend/db.json ./backend/db.json
+
+# Expose the port the app runs on.
+# Render will set the PORT environment variable, and our server will use it.
+# 5001 is the fallback defined in the server code.
+EXPOSE 5001
+
+# Start the server
+CMD ["node", "backend/dist/server.js"] 
