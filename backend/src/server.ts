@@ -243,11 +243,12 @@ if (process.env.NODE_ENV === 'production') {
 // Initialize DB and start server
 const startServer = async () => {
     // Initialize Gemini AI client
-    if (!process.env.GEMINI_API_KEY || process.env.GEMINI_API_KEY === "YOUR_API_KEY_HERE") {
-        console.error("FATAL ERROR: Gemini API key not found in backend/.env or is a placeholder.");
+    const apiKey = process.env.GEMINI_API_KEY;
+    if (!apiKey || apiKey === "YOUR_API_KEY_HERE") {
+        console.error(`FATAL ERROR: Gemini API key is missing or a placeholder. Value found: '${apiKey}'`);
         process.exit(1);
     }
-    genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+    genAI = new GoogleGenerativeAI(apiKey);
 
     // Dynamically import and initialize lowdb
     const { Low } = await import('lowdb');
