@@ -1,0 +1,309 @@
+{
+  "profile": {
+    "targets": {
+      "calories": 2220,
+      "protein": 167,
+      "carbohydrates": 222,
+      "fat": 74
+    },
+    "age": 39,
+    "gender": "male",
+    "height": 180,
+    "weight": 82,
+    "activityLevel": "moderate",
+    "goal": "lose"
+  },
+  "meals": [
+    {
+      "mealName": "2 Eggs and Half a Banana",
+      "totalCalories": 240,
+      "macros": {
+        "protein": {
+          "grams": 12,
+          "percentage": 32
+        },
+        "carbohydrates": {
+          "grams": 15,
+          "percentage": 41
+        },
+        "fat": {
+          "grams": 10,
+          "percentage": 27
+        }
+      },
+      "ingredients": [
+        {
+          "name": "2 Eggs",
+          "calories": "160",
+          "protein": "12",
+          "carbs": "2",
+          "fat": "10",
+          "quantity": 1,
+          "unit": "unit"
+        },
+        {
+          "name": "Half a Banana",
+          "calories": "80",
+          "protein": "0",
+          "carbs": "13",
+          "fat": "0",
+          "quantity": 1,
+          "unit": "unit"
+        }
+      ],
+      "id": 1752430377823,
+      "date": "2025-07-12",
+      "category": "Breakfast"
+    },
+    {
+      "mealName": "Starbucks Grilled Cheese and Coffee Frappuccino",
+      "totalCalories": 700,
+      "macros": {
+        "protein": {
+          "grams": 30,
+          "percentage": 21
+        },
+        "carbohydrates": {
+          "grams": 80,
+          "percentage": 57
+        },
+        "fat": {
+          "grams": 30,
+          "percentage": 21
+        }
+      },
+      "ingredients": [
+        {
+          "name": "Starbucks Grilled Cheese",
+          "calories": "400",
+          "protein": "20",
+          "carbs": "40",
+          "fat": "20",
+          "quantity": 1,
+          "unit": "unit"
+        },
+        {
+          "name": "Starbucks Coffee Frappuccino",
+          "calories": "300",
+          "protein": "10",
+          "carbs": "40",
+          "fat": "10",
+          "quantity": 1,
+          "unit": "unit"
+        }
+      ],
+      "id": 1752430401277,
+      "date": "2025-07-12",
+      "category": "Dinner"
+    },
+    {
+      "mealName": "2 Stella Artois Beers",
+      "totalCalories": 300,
+      "macros": {
+        "protein": {
+          "grams": 2,
+          "percentage": 6
+        },
+        "carbohydrates": {
+          "grams": 30,
+          "percentage": 94
+        },
+        "fat": {
+          "grams": 0,
+          "percentage": 0
+        }
+      },
+      "ingredients": [
+        {
+          "name": "Stella Artois Beer (1 bottle)",
+          "calories": 150,
+          "protein": 1,
+          "carbs": 15,
+          "fat": 0,
+          "quantity": 2,
+          "unit": "unit"
+        }
+      ],
+      "id": 1752430425908,
+      "date": "2025-07-12",
+      "category": "Dinner"
+    },
+    {
+      "mealName": "Smoked Salmon Naan Pitas",
+      "totalCalories": 570,
+      "macros": {
+        "protein": {
+          "grams": 30,
+          "percentage": 23
+        },
+        "carbohydrates": {
+          "grams": 71,
+          "percentage": 55
+        },
+        "fat": {
+          "grams": 27,
+          "percentage": 21
+        }
+      },
+      "ingredients": [
+        {
+          "name": "2 Naan Mini Pitas",
+          "calories": "300",
+          "protein": "10",
+          "carbs": "60",
+          "fat": "10",
+          "quantity": 1,
+          "unit": "unit"
+        },
+        {
+          "name": "Cream Cheese (2 tbsp)",
+          "calories": "80",
+          "protein": "2",
+          "carbs": "2",
+          "fat": "7",
+          "quantity": 1,
+          "unit": "unit"
+        },
+        {
+          "name": "Mustard (1 tsp)",
+          "calories": "5",
+          "protein": "0",
+          "carbs": "1",
+          "fat": "0",
+          "quantity": 1,
+          "unit": "unit"
+        },
+        {
+          "name": "Onions (1/4 cup)",
+          "calories": "15",
+          "protein": "1",
+          "carbs": "3",
+          "fat": "0",
+          "quantity": 1,
+          "unit": "unit"
+        },
+        {
+          "name": "Smoked Salmon (3oz)",
+          "calories": "170",
+          "protein": "17",
+          "carbs": "5",
+          "fat": "10",
+          "quantity": 1,
+          "unit": "unit"
+        }
+      ],
+      "id": 1752430480993,
+      "date": "2025-07-12",
+      "category": "Dinner"
+    },
+    {
+      "mealName": "Pear, Nut, Beet, and Olive Salad (1/2 serving)",
+      "totalCalories": 300,
+      "macros": {
+        "protein": {
+          "grams": 8,
+          "percentage": 13
+        },
+        "carbohydrates": {
+          "grams": 40,
+          "percentage": 63
+        },
+        "fat": {
+          "grams": 15,
+          "percentage": 24
+        }
+      },
+      "ingredients": [
+        {
+          "name": "Salad (1/4 serving)",
+          "calories": 50,
+          "protein": 2,
+          "carbs": 10,
+          "fat": 2,
+          "quantity": 1,
+          "unit": "unit"
+        },
+        {
+          "name": "Pear (1/2)",
+          "calories": 60,
+          "protein": 0,
+          "carbs": 15,
+          "fat": 0,
+          "quantity": 1,
+          "unit": "unit"
+        },
+        {
+          "name": "Nuts (1/4 cup)",
+          "calories": 100,
+          "protein": 4,
+          "carbs": 5,
+          "fat": 8,
+          "quantity": 1,
+          "unit": "unit"
+        },
+        {
+          "name": "Beet (1/2)",
+          "calories": 40,
+          "protein": 1,
+          "carbs": 8,
+          "fat": 0,
+          "quantity": 1,
+          "unit": "unit"
+        },
+        {
+          "name": "Olives (1/4 cup)",
+          "calories": 50,
+          "protein": 1,
+          "carbs": 2,
+          "fat": 5,
+          "quantity": 1,
+          "unit": "unit"
+        }
+      ],
+      "id": 1752430528490,
+      "date": "2025-07-12",
+      "category": "Lunch"
+    },
+    {
+      "mealName": "Pineapple, Serrano, and Pepperoni Pizza",
+      "totalCalories": 1200,
+      "macros": {
+        "protein": {
+          "grams": 40,
+          "percentage": 15
+        },
+        "carbohydrates": {
+          "grams": 180,
+          "percentage": 69
+        },
+        "fat": {
+          "grams": 40,
+          "percentage": 15
+        }
+      },
+      "ingredients": [
+        {
+          "name": "3 slices of pineapple pizza",
+          "calories": "600",
+          "protein": "20",
+          "carbs": "90",
+          "fat": "20",
+          "quantity": 1,
+          "unit": "unit"
+        },
+        {
+          "name": "2 slices of pepperoni pizza",
+          "calories": "600",
+          "protein": "20",
+          "carbs": "90",
+          "fat": "20",
+          "quantity": 1,
+          "unit": "unit"
+        }
+      ],
+      "id": 1752430564657,
+      "date": "2025-07-12",
+      "category": "Lunch"
+    }
+  ]
+}
